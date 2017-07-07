@@ -49,7 +49,7 @@ public class AccountBean {
 		return accountNum;
 	}
 	public String toString(){
-		return String.format("계좌 정보: [이름:%s 계좌번호:%d 날짜:%s 잔액:%d]\n", name, accountNum, txDate, money);
+		return String.format("이름:%s  계좌번호:%d  날짜:%s  잔액:%d  ",name,accountNum,txDate,money);
 	}
 	
 	

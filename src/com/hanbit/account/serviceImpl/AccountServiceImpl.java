@@ -91,8 +91,9 @@ public class AccountServiceImpl implements AccountService{
 	@Override
 	public void delete(int accountNum) {
 		// 계좌 해지
-		if(vec.contains(accountNum)){
-			vec.remove(accountNum);
+		bean = findAccount(accountNum);
+		if(accountNum==bean.getAccountNum()){
+			vec.remove(bean);
 		}
 		
 	}
